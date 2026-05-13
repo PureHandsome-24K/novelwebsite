@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/nav.css}">
+    <link rel="stylesheet" th:href="@{/css/navv.css}">
+</head>
+<body>
+<!-- 你的导航栏 -->
+<div th:replace="~{common/commons::navbar(active='Shelf.html')}"/>
+
+<!-- 书本列表：循环渲染 -->
+<div class="book-container">
+    <a class="book-card" th:each="book : ${bookList}" th:href="@{/main/{title}(title=${book.getDir()})}">
+
+        <img class="book-cover" th:src="@{${book.getCoverUrl()}}" alt="书籍封面"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div style="display: none; width:100%; height:170px; background:#eee; align-items:center; justify-content:center; color:#999;">
+            暂无封面
+        </div>
+
+        <h3 class="book-title" th:text="${book.title}">书名</h3>
+        <p class="book-author" th:text="${book.author}">作者</p>
+    </a>
+</div>
+</body>
+</html>

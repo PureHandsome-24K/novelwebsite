@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- 外层容器 + 内层导航条，结构完整 -->
+<div th:fragment="navbar" class="navbar-container">
+    <div class="navbar">
+        <a th:href="@{/Home}" th:class="${active=='Home.html'?'nav-link active':'nav-link'}">首页</a>
+        <a th:href="@{/bookshelf}" th:class="${active=='Shelf.html'?'nav-link active':'nav-link'}">书架</a>
+        <a th:href="@{/discover}" th:class="${active=='discovery.html'?'nav-link active':'nav-link'}">发现</a>
+        <a th:href="@{/profile}" th:class="${active=='mine.html'?'nav-link active':'nav-link'}">我的</a>
+    </div>
+</div>
+</body>
+</html>

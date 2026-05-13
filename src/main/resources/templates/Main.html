@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表</title>
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+</head>
+<body>
+<div th:replace="~{common/head::header}">
+
+</div>
+
+<div class="main-container">
+    <div class="article-list">
+        <div class="article-card">
+            <h2 class="article-title" th:text="${titlemain.getTitle()}"></h2>
+            <div class="article-meta">
+                <p class="book-author" th:text="${book.author}">作者</p>
+                <p class="book-title" th:text="${book.title}">书名</p>
+            </div>
+            <p class="article-summary" th:text="${article}">
+                这是文章摘要内容，显示文章的主要内容和简介信息...
+            </p>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <!-- 上一页 -->
+        <a th:if="${currentPage > 1}"
+           th:href="@{/main/{title}/{id}(title=${book.dir}, id=${currentPage - 1})}">上一页</a>
+        <a th:unless="${currentPage > 1}"
+           href="javascript:;" style="color: #ccc; cursor: not-allowed; border-color: #ddd;">上一页</a>
+
+        <!-- 当前页码 -->
+        <a href="javascript:;" class="active" th:text="${currentPage != null ? currentPage : 1}">1</a>
+
+        <!-- 下一页 -->
+        <a th:classappend="${!hasNext} ? 'lock-gray'"
+           th:href="${hasNext} ? @{/main/{title}/{id}(title=${book.dir}, id=${currentPage + 1})} : 'javascript:;'"
+           th:style="${hasNext} ? '' : 'color:#ccc; cursor:not-allowed; border-color:#ddd;'">下一页</a>
+    </div>
+</div>
+</body>
+</html>
