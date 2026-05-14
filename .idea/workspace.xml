@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd5004f2-58a6-4814-9ce5-510307703e44" name="更改" comment="" />
+    <list default="true" id="cd5004f2-58a6-4814-9ce5-510307703e44" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/liu/NovelWebsiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/liu/NovelWebsiteApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -29,13 +47,19 @@
   "keyToString": {
     "JUnit.DemoApplicationTests.contextLoads.executor": "Run",
     "JUnit.NovelWebsiteApplicationTests.contextLoads.executor": "Run",
+    "Maven.NovelWebsite [clean].executor": "Run",
+    "Maven.NovelWebsite [compile].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.NovelWebsiteApplication.executor": "Run",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/GitCode/NovelWebsite/src/main/java/com/liu",
     "node.js.detected.package.eslint": "true",
@@ -48,6 +72,11 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,8 +88,8 @@
       <recent name="D:\GitCode\NovelWebsite\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.liu.config" />
       <recent name="com.liu.controller" />
+      <recent name="com.liu.config" />
       <recent name="com.liu.mapper" />
     </key>
   </component>
@@ -134,6 +163,8 @@
       <option name="presentableId" value="Default" />
       <updated>1778682200596</updated>
       <workItem from="1778682201186" duration="2279000" />
+      <workItem from="1778684955414" duration="166000" />
+      <workItem from="1778717539084" duration="5597000" />
     </task>
     <servers />
   </component>

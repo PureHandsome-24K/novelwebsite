@@ -11,6 +11,8 @@ spring:
     basename: i18n/login
     encoding: UTF-8
     fallback-to-system-locale: true
+  thymeleaf:
+    cache: false
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml

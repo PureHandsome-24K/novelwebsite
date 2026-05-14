@@ -1,7 +1,9 @@
 package com.liu;
 
+import com.liu.entity.User;
 import com.liu.mapper.BookMapper;
-import com.liu.entity.Book;
+
+import com.liu.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,11 +12,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 class NovelWebsiteApplicationTests {
     @Autowired
     private BookMapper bookMapper;
+    @Autowired
+    UserMapper userMapper;
 
     @Test
     void contextLoads() {
-        Book getbookbyid = bookMapper.getbookbyid(1);
-        System.out.println(getbookbyid);
+        User user = userMapper.getUserByName("admin");
+        System.out.println(user);
     }
 
 }
