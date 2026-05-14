@@ -32,7 +32,12 @@ public class SecurityConfig {
                         .loginPage("/")
                         .loginProcessingUrl("/login")
                         .failureUrl("/?error=true")
-                        .defaultSuccessUrl("/Home", true)
+                        .successHandler((request, response, authentication) -> {
+                            // 登录成功后将用户名存入 Session
+                            request.getSession().setAttribute("username", authentication.getName());
+                            // 重定向到首页
+                            response.sendRedirect("/Home");
+                        })
                         .permitAll()
                 )
 

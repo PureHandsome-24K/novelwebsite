@@ -1,6 +1,8 @@
 package com.liu.controller;
 
 import com.liu.entity.Book;
+import com.liu.entity.MyBooks;
+import com.liu.mapper.MyBooksMapper;
 import com.liu.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,9 @@ import java.util.List;
 
 @Controller
 public class BookController {
+
+    @Autowired
+    private MyBooksMapper myBooksMapper;
     @Autowired
     private BookService bookService;
     @GetMapping("/Home")
@@ -20,13 +25,15 @@ public class BookController {
         model.addAttribute("bookList", bookList);
         return "Home";
     }
-
-
-
     @GetMapping("/bookshelf")
-    public String bookshelf(Model model) {
+    public String mybooks(Model model) {
+
+        List<MyBooks> bookList = myBooksMapper.queryMybooks("admin");
+        model.addAttribute("bookList", bookList);
         return "Shelf";
     }
+
+
 
     @GetMapping("/discover")
     public String discover(Model model) {

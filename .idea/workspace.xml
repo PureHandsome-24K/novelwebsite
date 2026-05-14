@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd5004f2-58a6-4814-9ce5-510307703e44" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/service/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Mine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Shelf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/commons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/commons.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/liu/NovelWebsiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/liu/NovelWebsiteApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,7 +64,7 @@
     "Spring Boot.NovelWebsiteApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GitCode/NovelWebsite/src/main/java/com/liu",
+    "last_opened_file_path": "D:/GitCode/NovelWebsite/src/main/resources/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,11 +84,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitCode\NovelWebsite\src\main\resources\mapper" />
+      <recent name="D:\GitCode\NovelWebsite\src\main\resources\templates" />
       <recent name="D:\GitCode\NovelWebsite\src\main\java\com\liu" />
       <recent name="D:\GitCode\NovelWebsite" />
       <recent name="D:\GitCode\NovelWebsite\src\main\resources" />
-      <recent name="D:\GitCode\NovelWebsite\src\main\resources\templates" />
-      <recent name="D:\GitCode\NovelWebsite\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.liu.controller" />
@@ -164,7 +167,8 @@
       <updated>1778682200596</updated>
       <workItem from="1778682201186" duration="2279000" />
       <workItem from="1778684955414" duration="166000" />
-      <workItem from="1778717539084" duration="5597000" />
+      <workItem from="1778717539084" duration="5948000" />
+      <workItem from="1778730958898" duration="3563000" />
     </task>
     <servers />
   </component>

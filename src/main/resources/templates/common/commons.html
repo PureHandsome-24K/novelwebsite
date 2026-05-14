@@ -9,6 +9,9 @@
         <a th:href="@{/discover}" th:class="${active=='discovery.html'?'nav-link active':'nav-link'}">发现</a>
         <a th:href="@{/profile}" th:class="${active=='mine.html'?'nav-link active':'nav-link'}">我的</a>
     </div>
-</div>
+    <div class="user-info">
+        <span class="username" th:text="${session.username}">username</span>
+        <a class="logout-btn" th:href="@{/logout}">退出</a>
+    </div></div>
 </body>
 </html>

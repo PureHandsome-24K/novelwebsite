@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liu.mapper.MyBooksMapper">
+
+    <select id="queryMybooks" resultMap="MyBooksAndBook" parameterType="string">
+        select m.username musername,b.id bid,b.title btitle,b.author bauthor,b.category bategory,b.cover_url bcoverurl,b.dir bdir from mybooks m,book b
+        where m.bid=b.id  and m.username=#{username};
+    </select>
+
+    <resultMap id="MyBooksAndBook" type="MyBooks">
+        <result property="username" column="musername"/>
+        <collection property="book" ofType="Book">
+            <result property="id" column="bid"/>
+            <result property="title" column="btitle"/>
+            <result property="author" column="bauthor"/>
+            <result property="category" column="bategory"/>
+            <result property="coverUrl" column="bcoverurl"/>
+            <result property="dir" column="bdir"/>
+        </collection>
+    </resultMap>
+
+</mapper>
