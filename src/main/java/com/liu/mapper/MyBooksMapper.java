@@ -11,4 +11,5 @@ import java.util.List;
 @Mapper
 public interface MyBooksMapper extends BaseMapper<MyBooks> {
     List<MyBooks> queryMybooks(String username);
+
 }

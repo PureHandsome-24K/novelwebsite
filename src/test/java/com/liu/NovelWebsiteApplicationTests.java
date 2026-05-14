@@ -6,6 +6,7 @@ import com.liu.mapper.BookMapper;
 
 import com.liu.mapper.MyBooksMapper;
 import com.liu.mapper.UserMapper;
+import com.liu.service.MybooksService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,9 @@ import java.util.List;
 class NovelWebsiteApplicationTests {
 
     @Autowired
+    MybooksService mybooksService;
+
+    @Autowired
     MyBooksMapper myBooksMapper;
     @Autowired
     private BookMapper bookMapper;
@@ -24,11 +28,9 @@ class NovelWebsiteApplicationTests {
 
     @Test
     void contextLoads() {
-        List<MyBooks> admin = myBooksMapper.queryMybooks("admin");
-        for (MyBooks myBooks : admin) {
-            System.out.println(myBooks);
-        }
 
+        int add = mybooksService.add(new MyBooks(2, "admin", 2));
+        System.out.println(add);
     }
 
 }
