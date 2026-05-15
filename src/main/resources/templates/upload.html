@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片上传表单</title>
+    <style>
+        /* 页面简单居中 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* 表单样式 */
+        form {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* 文件选择框 */
+        input[type="file"] {
+            padding: 8px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        /* 提交按钮 */
+        button {
+            padding: 10px 25px;
+            background-color: #409eff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #337ecc;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="img" accept="image/*">
+    <button type="submit">上传图片</button>
+</form>
+
+</body>
+</html>

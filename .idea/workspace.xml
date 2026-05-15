@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd5004f2-58a6-4814-9ce5-510307703e44" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/entity/MyBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/entity/MyBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/mapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/mapper/MyBooksMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/mapper/MyBooksMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/service/MybooksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/service/MybooksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/service/MybooksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/service/MybooksServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MyBooksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MyBooksMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/navv.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/navv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/Microsoft Edge.lnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Mine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/commons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/commons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/discovery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/discovery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/liu/NovelWebsiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/liu/NovelWebsiteApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -59,10 +46,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "JUnit.DemoApplicationTests.contextLoads.executor": "Run",
     "JUnit.NovelWebsiteApplicationTests.contextLoads.executor": "Run",
     "Maven.NovelWebsite [clean].executor": "Run",
     "Maven.NovelWebsite [compile].executor": "Run",
+    "Maven.NovelWebsite [install].executor": "Run",
+    "Maven.NovelWebsite [validate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -84,7 +74,7 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -181,7 +171,8 @@
       <workItem from="1778717539084" duration="5948000" />
       <workItem from="1778730958898" duration="3812000" />
       <workItem from="1778758178954" duration="9912000" />
-      <workItem from="1778812376714" duration="4780000" />
+      <workItem from="1778812376714" duration="8460000" />
+      <workItem from="1778835070523" duration="3539000" />
     </task>
     <servers />
   </component>

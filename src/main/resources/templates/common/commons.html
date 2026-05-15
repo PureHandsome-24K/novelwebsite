@@ -10,7 +10,7 @@
         <a th:href="@{/profile}" th:class="${active=='mine.html'?'nav-link active':'nav-link'}">我的</a>
     </div>
         <div class="user-info">
-        <img class="avatar" th:src="@{/img/avatar.jpg}" alt="头像">
+            <a th:href="@{/toupload}"><img class="avatar" th:src="@{/img/avatar.jpg}" alt="头像"></a>
         <span class="username" th:text="${session.username}">username</span>
         <a class="logout-btn" th:href="@{/logout}">退出</a>
     </div>
