@@ -18,5 +18,9 @@ public class MyBooks {
         this.username = username;
         this.bid = bid;
     }
+    public MyBooks(String username, int bid) {
+        this.username = username;
+        this.bid = bid;
+    }
 
 }

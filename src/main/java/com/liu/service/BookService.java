@@ -12,5 +12,7 @@ public interface BookService {
     public Book getById(Integer id);
 
     Book getBookByDir(String dir);
+    Book getbooktitle(String title);
+
 
 }

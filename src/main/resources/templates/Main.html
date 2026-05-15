@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章列表</title>
     <link rel="stylesheet" th:href="@{/css/header.css}">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        function addToShelf(button) {
+            var title = $(button).data('title');
+            var buttonText = $(button).text().trim();
+
+            console.log(title, buttonText);
+            $.ajax({
+                type: "POST",
+                url: "/addShelf",
+                data: {
+                    buttonText: buttonText,
+                    title: title
+                },
+                success: function (data) {
+                    $(button).text(data.buttonText);
+                }
+            });
+        }
+
+
+    </script>
 </head>
 <body>
 <div th:replace="~{common/head::header}">
@@ -14,6 +36,12 @@
 <div class="main-container">
     <div class="article-list">
         <div class="article-card">
+            <button class="shelf-button"
+                    th:data-title="${book.title}"
+                    onclick="addToShelf(this)">
+                [[${buttonText != null ? buttonText : '添加书架'}]]
+            </button>
+
             <h2 class="article-title" th:text="${titlemain.getTitle()}"></h2>
             <div class="article-meta">
                 <p class="book-author" th:text="${book.author}">作者</p>

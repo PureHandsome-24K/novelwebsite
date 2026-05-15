@@ -8,7 +8,7 @@
         where m.bid=b.id  and m.username=#{username};
     </select>
 
-       <resultMap id="MyBooksAndBook" type="MyBooks">
+    <resultMap id="MyBooksAndBook" type="MyBooks">
         <id property="id" column="id"/>
         <result property="username" column="musername"/>
         <result property="bid" column="bid"/>
@@ -21,6 +21,5 @@
             <result property="dir" column="bdir"/>
         </collection>
     </resultMap>
-
 
 </mapper>

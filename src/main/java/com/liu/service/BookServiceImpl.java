@@ -26,4 +26,8 @@ public class BookServiceImpl implements BookService{
         return bookMapper.getBookByDir(dir);
     }
 
+    @Override
+    public Book getbooktitle(String title) {
+        return bookMapper.getbooktitle(title);
+    }
 }

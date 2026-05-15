@@ -15,4 +15,7 @@ public interface BookMapper extends BaseMapper<Book> {
 
     Book getbookbyid(int id);
 
+    @Select("select * from book where title= #{title}")
+    Book getbooktitle(String title);
+
 }

@@ -73,3 +73,12 @@
         text-decoration: none;
         font-size: 14px;
     }
+    /* 仅修改头像样式，不影响其他任何元素 */
+    .avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;     /* 圆形头像 */
+        object-fit: cover;      /* 图片不变形 */
+        border: 2px solid #fff; /* 白色边框，更精致 */
+        box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }

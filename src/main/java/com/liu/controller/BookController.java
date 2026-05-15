@@ -5,6 +5,7 @@ import com.liu.entity.MyBooks;
 import com.liu.mapper.MyBooksMapper;
 import com.liu.service.BookService;
 import com.liu.service.MybooksService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,12 +28,9 @@ public class BookController {
         return "Home";
     }
     @GetMapping("/bookshelf")
-    public String mybooks(Model model) {
+    public String mybooks(Model model, HttpServletRequest request) {
+        List<MyBooks> bookList = mybooksService.queryMybooks(request.getSession().getAttribute("username").toString());
 
-        List<MyBooks> bookList = mybooksService.queryMybooks("admin");
-        for (MyBooks myBooks : bookList) {
-            System.out.println(myBooks);
-        }
         model.addAttribute("bookList", bookList);
         return "Shelf";
     }

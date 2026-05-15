@@ -1,5 +1,6 @@
 package com.liu;
 
+import com.liu.entity.Book;
 import com.liu.entity.MyBooks;
 import com.liu.entity.User;
 import com.liu.mapper.BookMapper;
@@ -28,9 +29,8 @@ class NovelWebsiteApplicationTests {
 
     @Test
     void contextLoads() {
-
-        int add = mybooksService.add(new MyBooks(2, "admin", 2));
-        System.out.println(add);
+        Book getbooktitle = bookMapper.getbooktitle("神秘复苏");
+        System.out.println(getbooktitle);
     }
 
 }
