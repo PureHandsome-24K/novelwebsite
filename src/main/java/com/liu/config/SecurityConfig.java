@@ -18,8 +18,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(auth -> auth
                         // 放行：anon 等价于 permitAll()
-                        .requestMatchers("/","/tologin", "/index", "/index.html", "/login", "/noauthc").permitAll()
-
+                                .requestMatchers("/","/tologin", "/index", "/index.html", "/login", "/noauthc", "/sendMail").permitAll()
                         // 必须登录：authc 等价于 authenticated()
                         .requestMatchers("/Home").authenticated()
 

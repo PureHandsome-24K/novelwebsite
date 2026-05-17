@@ -22,7 +22,7 @@ public class LoginController {
     @PostMapping("/upload")
     public String upload(@RequestParam("img") MultipartFile file, HttpServletRequest request, Model model) throws IOException {
         if (file.isEmpty()) {
-            model.addAttribute("message", "文件不能为空");
+            model.addAttribute("git remote add github https://github.com/PureHandsome-24K/novelwebsite.git", "文件不能为空");
             return "upload";
         }
 
